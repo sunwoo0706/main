@@ -1,2 +1,1 @@
-## lemegeton
-~
+# lemegeton
