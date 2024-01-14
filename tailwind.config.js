@@ -5,6 +5,12 @@ module.exports = {
   darkMode: ["class"],
   content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
   theme: {
+    colors: {
+      gray: {
+        1000: "hsl(var(--gray-1000))",
+        1100: "hsl(var(--gray-1100))",
+      },
+    },
     container: {
       center: true,
       padding: "2rem",
