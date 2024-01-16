@@ -2,7 +2,7 @@
 
 import { useWindowSize } from "@/hooks/use-window-size"
 
-export function TailwindIndicator() {
+export function WindowSizeIndicator() {
   const { width, height } = useWindowSize()
 
   return (

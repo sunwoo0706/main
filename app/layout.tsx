@@ -6,7 +6,7 @@ import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import { SiteHeader } from "@/components/site-header"
 import { ThemeProvider } from "@/components/theme-provider"
-import { TailwindIndicator } from "@/components/window-size-indicator"
+import { WindowSizeIndicator } from "@/components/window-size-indicator"
 
 export const metadata: Metadata = {
   title: {
@@ -43,7 +43,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               <SiteHeader />
               {children}
             </div>
-            <TailwindIndicator />
+            <WindowSizeIndicator />
           </ThemeProvider>
         </body>
       </html>
