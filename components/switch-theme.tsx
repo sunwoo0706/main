@@ -21,7 +21,12 @@ export function SwitchTheme() {
         <PopoverContent className="w-full p-1">
           <div className="flex flex-col gap-1">
             {["light", "dark", "system"].map((theme) => (
-              <Button variant="ghost" onClick={() => setTheme(theme)} size="sm">
+              <Button
+                className="h-6 text-xs"
+                variant="ghost"
+                onClick={() => setTheme(theme)}
+                size="sm"
+              >
                 {theme}
               </Button>
             ))}
