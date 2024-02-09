@@ -6,5 +6,6 @@ export const siteConfig = {
   email: "sunwoo0706@icloud.com",
   links: {
     github: "https://github.com/sunwoo0706",
+    twitter: "https://twitter.com/sunwoo0706",
   },
 }

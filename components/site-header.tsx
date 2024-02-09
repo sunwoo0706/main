@@ -1,6 +1,6 @@
 "use client"
 
-import { SwitchTheme } from "./switch-theme"
+import { MainNav } from "./main-nav"
 
 export function SiteHeader() {
   return (
@@ -16,7 +16,7 @@ export function SiteHeader() {
           프런트엔드 엔지니어
         </span>
       </div>
-      <SwitchTheme />
+      <MainNav />
     </header>
   )
 }
