@@ -27,7 +27,15 @@ interface RootLayoutProps {
   children: React.ReactNode
 }
 
-export default function RootLayout({ children }: RootLayoutProps) {
+async function getLastUpdateAt() {
+  const lastUpdateAt = new Date().toISOString()
+
+  return lastUpdateAt
+}
+
+export default async function RootLayout({ children }: RootLayoutProps) {
+  const lastUpdateAt = await getLastUpdateAt()
+
   return (
     <>
       <html lang="ko" suppressHydrationWarning>
@@ -42,7 +50,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <div className="mx-auto my-12 max-w-[42rem] px-6 antialiased sm:my-32 md:my-16">
               <SiteHeader />
               {children}
-              <SiteFooter />
+              <SiteFooter lastUpdateAt={lastUpdateAt} />
             </div>
           </ThemeProvider>
         </body>
