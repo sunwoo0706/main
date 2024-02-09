@@ -1,6 +1,5 @@
 import {
   ExternalLink,
-  Hammer,
   Loader2,
   Moon,
   Sun,
@@ -10,7 +9,6 @@ import {
 export type Icon = LucideIcon
 
 export const Icons = {
-  hammer: Hammer,
   loader: Loader2,
   sun: Sun,
   moon: Moon,
