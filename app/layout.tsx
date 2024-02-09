@@ -4,11 +4,9 @@ import { Metadata } from "next"
 import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
-import { LicenseIndicator } from "@/components/license-indicator"
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 import { ThemeProvider } from "@/components/theme-provider"
-import { WindowSizeIndicator } from "@/components/window-size-indicator"
 
 export const metadata: Metadata = {
   title: {
