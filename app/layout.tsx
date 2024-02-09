@@ -23,14 +23,18 @@ export const metadata: Metadata = {
   },
 }
 
-interface RootLayoutProps {
-  children: React.ReactNode
+async function getLastUpdateAt() {
+  const currentDate = new Date()
+
+  const year = currentDate.getFullYear()
+  const month = (currentDate.getMonth() + 1).toString().padStart(2, "0")
+  const day = currentDate.getDate().toString().padStart(2, "0")
+
+  return year + "." + month + "." + day
 }
 
-async function getLastUpdateAt() {
-  const lastUpdateAt = new Date().toISOString()
-
-  return lastUpdateAt
+interface RootLayoutProps {
+  children: React.ReactNode
 }
 
 export default async function RootLayout({ children }: RootLayoutProps) {
