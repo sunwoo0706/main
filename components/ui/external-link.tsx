@@ -8,7 +8,7 @@ interface ExternalLinkProps {
 export function ExternalLink({ href, children }: ExternalLinkProps) {
   return (
     <a
-      className="underline decoration-1 underline-offset-2 transition"
+      className="text-gray-1000 underline decoration-1 underline-offset-2 transition hover:text-gray-1000/80"
       href={href}
       target="_blank"
       rel="noreferrer"
