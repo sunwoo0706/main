@@ -5,7 +5,6 @@ import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
 import { SiteHeader } from "@/components/site-header"
-import { SwitchTheme } from "@/components/switch-theme"
 import { ThemeProvider } from "@/components/theme-provider"
 import { WindowSizeIndicator } from "@/components/window-size-indicator"
 
@@ -45,7 +44,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
               {children}
             </div>
             <WindowSizeIndicator />
-            <SwitchTheme />
           </ThemeProvider>
         </body>
       </html>

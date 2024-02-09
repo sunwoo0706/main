@@ -1,4 +1,6 @@
-import { MyAvatar } from "./my-avatar"
+"use client"
+
+import { SwitchTheme } from "./switch-theme"
 
 export function SiteHeader() {
   return (
@@ -14,7 +16,7 @@ export function SiteHeader() {
           프런트엔드 엔지니어
         </span>
       </div>
-      <MyAvatar />
+      <SwitchTheme />
     </header>
   )
 }
