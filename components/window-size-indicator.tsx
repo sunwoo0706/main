@@ -6,7 +6,7 @@ export function WindowSizeIndicator() {
   const { width, height } = useWindowSize()
 
   return (
-    <div className="fixed bottom-1 left-1 z-50 p-6">
+    <div className="w-fit p-6">
       <p className="text-white font-mono text-xs">
         {width}x{height}
       </p>

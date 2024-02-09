@@ -4,6 +4,8 @@ import { Metadata } from "next"
 import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
+import { LicenseIndicator } from "@/components/license-indicator"
+import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 import { ThemeProvider } from "@/components/theme-provider"
 import { WindowSizeIndicator } from "@/components/window-size-indicator"
@@ -39,11 +41,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
           )}
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <div className="mx-auto my-12 max-w-[672px] px-6 antialiased sm:my-32 md:my-16">
+            <div className="mx-auto my-12 mb-16 max-w-[42rem] px-6 antialiased sm:my-32 md:my-16">
               <SiteHeader />
               {children}
+              <SiteFooter />
             </div>
-            <WindowSizeIndicator />
           </ThemeProvider>
         </body>
       </html>
