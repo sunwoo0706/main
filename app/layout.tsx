@@ -39,7 +39,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           )}
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <div className="mx-auto my-12 mb-16 max-w-[42rem] px-6 antialiased sm:my-32 md:my-16">
+            <div className="mx-auto my-12 max-w-[42rem] px-6 antialiased sm:my-32 md:my-16">
               <SiteHeader />
               {children}
               <SiteFooter />
