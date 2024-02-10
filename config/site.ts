@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Sunwoo Lee",
-  description: "Don't be lazy",
+  name: "이선우",
+  description: "안녕하세요 프런트엔드 엔지니어 이선우입니다.",
   email: "sunwoo0706@icloud.com",
   links: {
     github: "https://github.com/sunwoo0706",
