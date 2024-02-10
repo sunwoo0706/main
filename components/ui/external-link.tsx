@@ -14,7 +14,7 @@ export function ExternalLink({ href, children }: ExternalLinkProps) {
       rel="noreferrer"
     >
       {children}
-      <Icons.externalLink className="inline-block align-super" size={10} />
+      <Icons.externalLink className="inline-block align-super" size={8} />
     </a>
   )
 }
