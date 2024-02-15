@@ -1,0 +1,36 @@
+{
+  "profile": {
+    "name": "이선우",
+    "job": "프런트엔드 엔지니어"
+  },
+  "about": {
+    "today": {
+      "title": "오늘날",
+      "description": "아마추어와 프로의 차이를 인지하고, 개발에 임합니다.<br />ui의 모양, 느낌, 작동 방식에 대해 깊이 생각합니다."
+    },
+    "project": {
+      "title": "프로젝트",
+      "cards": {
+        "projectCard1": {
+          "title": "이제부터",
+          "description": "프로젝트는 이제부터 시작할게요",
+          "link": "https://example.com"
+        },
+        "projectCard2": {
+          "title": "이제부터",
+          "description": "프로젝트는 이제부터 시작할게요",
+          "link": "https://example.com"
+        },
+        "projectCard3": {
+          "title": "이제부터",
+          "description": "프로젝트는 이제부터 시작할게요",
+          "link": "https://example.com"
+        }
+      }
+    },
+    "more": {
+      "title": "더보기",
+      "description": "저에 대해 궁금한 점이 있으시다면 <email>Email</email>로 언제든지 연락주시면 감사드리겠습니다."
+    }
+  }
+}

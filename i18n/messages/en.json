@@ -1,0 +1,36 @@
+{
+  "profile": {
+    "name": "Sunwoo Lee",
+    "job": "Frontend Engineer"
+  },
+  "about": {
+    "today": {
+      "title": "Today",
+      "description": "Recognize the difference between amateur and professional when developing.<br />Think deeply about the look, feel, and behavior of the UI."
+    },
+    "project": {
+      "title": "Project",
+      "cards": {
+        "projectCard1": {
+          "title": "Not yet",
+          "description": "Lorem ipsum lorem ipsum",
+          "link": "https://example.com"
+        },
+        "projectCard2": {
+          "title": "Not yet",
+          "description": "Lorem ipsum lorem ipsum",
+          "link": "https://example.com"
+        },
+        "projectCard3": {
+          "title": "Not yet",
+          "description": "Lorem ipsum lorem ipsum",
+          "link": "https://example.com"
+        }
+      },
+      "more": {
+        "title": "More",
+        "description": "If you have any questions about me, feel free to reach out to me via <email>Email</email>."
+      }
+    }
+  }
+}
