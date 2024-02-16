@@ -1,5 +1,6 @@
 "use client"
 
+import { useTranslations } from "next-intl"
 import { useTheme } from "next-themes"
 
 import { Icons } from "./icons"
@@ -7,14 +8,12 @@ import { Button } from "./ui/button"
 import { Ping } from "./ui/ping"
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover"
 
-export function SwitchTheme() {
-  const { theme: currentTheme, setTheme } = useTheme()
+interface IProps {
+  themeLabels: Record<string, string>
+}
 
-  const themeLabels: Record<string, string> = {
-    light: "밝은",
-    dark: "어두운",
-    system: "시스템",
-  }
+export function SwitchTheme({ themeLabels }: IProps) {
+  const { theme: currentTheme, setTheme } = useTheme()
 
   return (
     <Popover>

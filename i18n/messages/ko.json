@@ -3,6 +3,13 @@
     "name": "이선우",
     "job": "프런트엔드 엔지니어"
   },
+  "ui": {
+    "themes": {
+      "light": "밝은",
+      "dark": "어두운",
+      "system": "시스템"
+    }
+  },
   "about": {
     "today": {
       "title": "오늘날",

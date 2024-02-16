@@ -3,6 +3,13 @@
     "name": "Sunwoo Lee",
     "job": "Frontend Engineer"
   },
+  "ui": {
+    "themes": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    }
+  },
   "about": {
     "today": {
       "title": "Today",
