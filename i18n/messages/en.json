@@ -33,11 +33,11 @@
           "description": "Lorem ipsum lorem ipsum",
           "link": "https://example.com"
         }
-      },
-      "more": {
-        "title": "More",
-        "description": "If you have any questions about me, feel free to reach out to me via <email>Email</email>."
       }
+    },
+    "more": {
+      "title": "More",
+      "description": "If you have any questions about me, feel free to reach out to me via <email>Email</email>."
     }
   }
 }
