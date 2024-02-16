@@ -5,7 +5,7 @@ import { SectionCard } from "./section-card"
 export function AboutProject() {
   const t = useTranslations("about.project")
 
-  const cards = (key: string) => t(`cards.${key}`)
+  const tCards = (key: string) => t(`cards.${key}`)
 
   const projectCardKeyList = [
     "projectCard1",
@@ -22,9 +22,9 @@ export function AboutProject() {
         {projectCardKeyList.map((key) => (
           <SectionCard
             key={key}
-            title={cards(`${key}.title`)}
-            description={cards(`${key}.description`)}
-            link={cards(`${key}.link`)}
+            title={tCards(`${key}.title`)}
+            description={tCards(`${key}.description`)}
+            link={tCards(`${key}.link`)}
           />
         ))}
       </div>
