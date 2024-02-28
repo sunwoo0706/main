@@ -8,6 +8,10 @@
       "light": "Light",
       "dark": "Dark",
       "system": "System"
+    },
+    "locale": {
+      "en": "English",
+      "ko": "Korean"
     }
   },
   "about": {
