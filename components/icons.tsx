@@ -1,5 +1,6 @@
 import {
   ExternalLink,
+  Languages,
   LucideProps,
   Moon,
   Sun,
@@ -28,4 +29,5 @@ export const Icons = {
     </svg>
   ),
   externalLink: ExternalLink,
+  languages: Languages,
 }
