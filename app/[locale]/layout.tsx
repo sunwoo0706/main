@@ -4,6 +4,7 @@ import { Metadata } from "next"
 import { siteConfig } from "@/config/site"
 import { fontSans } from "@/lib/fonts"
 import { cn } from "@/lib/utils"
+import { Toaster } from "@/components/ui/sonner"
 import { SiteHeader } from "@/components/site-header"
 import { ThemeProvider } from "@/components/theme-provider"
 
@@ -49,6 +50,7 @@ export default async function RootLayout({
               <SiteHeader />
               {children}
             </div>
+            <Toaster />
           </ThemeProvider>
         </body>
       </html>
