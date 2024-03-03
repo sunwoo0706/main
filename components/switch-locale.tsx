@@ -1,9 +1,10 @@
 "use client"
 
-import { useRouter } from "next/navigation"
+import { useParams } from "next/navigation"
 import { useLocale } from "next-intl"
 
 import { siteConfig } from "@/config/site"
+import { usePathname, useRouter } from "@/lib/navigation"
 
 import { Icons } from "./icons"
 import { Button } from "./ui/button"
@@ -16,10 +17,16 @@ interface IProps {
 
 export function SwitchLocale({ localeLabels }: IProps) {
   const router = useRouter()
+  const pathname = usePathname()
+  const params = useParams()
+
   const nowLocale = useLocale()
 
   const setLocale = (locale: string) => {
-    router.push(`/${locale}/`)
+    // @ts-expect-error -- TypeScript will validate that only known `params`
+    // are used in combination with a given `pathname`. Since the two will
+    // always match for the current route, we can skip runtime checks.
+    router.replace({ pathname, params }, { locale })
   }
 
   return (
