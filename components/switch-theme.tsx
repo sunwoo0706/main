@@ -26,6 +26,7 @@ export function SwitchTheme({ themeLabels }: IProps) {
         <div className="flex flex-col gap-1">
           {["light", "dark", "system"].map((theme) => (
             <Button
+              key={theme}
               className="flex h-6 w-20 justify-between rounded-sm p-1.5 text-xs"
               variant="ghost"
               onClick={() => setTheme(theme)}

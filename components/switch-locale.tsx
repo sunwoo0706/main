@@ -40,6 +40,7 @@ export function SwitchLocale({ localeLabels }: IProps) {
         <div className="flex flex-col gap-1">
           {siteConfig.locales.map((locale) => (
             <Button
+              key={locale}
               className="flex h-6 w-20 justify-between rounded-sm p-1.5 text-xs"
               variant="ghost"
               onClick={() => setLocale(locale)}
