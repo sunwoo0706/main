@@ -1,20 +1,28 @@
-import { Icons } from "../icons"
+import { cx } from "class-variance-authority"
 
-interface ExternalLinkProps {
-  href: string
+interface ExternalLinkProps
+  extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   children: React.ReactNode
 }
 
-export function ExternalLink({ href, children }: ExternalLinkProps) {
+export function ExternalLink({
+  children,
+  className,
+  target = "_blank",
+  rel = "noreferrer",
+  ...props
+}: ExternalLinkProps) {
   return (
     <a
-      className="text-gray-1000 underline decoration-1 underline-offset-2 transition hover:text-gray-1000/80"
-      href={href}
-      target="_blank"
-      rel="noreferrer"
+      className={cx(
+        "text-gray-1000 underline decoration-1 underline-offset-2 transition hover:text-gray-1000/80",
+        className
+      )}
+      target={target}
+      rel={rel}
+      {...props}
     >
       {children}
-      <Icons.externalLink className="inline-block align-super" size={8} />
     </a>
   )
 }
