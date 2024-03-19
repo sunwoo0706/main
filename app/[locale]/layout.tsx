@@ -19,10 +19,7 @@ export const metadata: Metadata = {
     { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
   icons: {
-    icon: [
-      { url: "/favicon.ico", media: "(prefers-color-scheme: light)" },
-      { url: "/favicon-dark.ico", media: "(prefers-color-scheme: dark)" },
-    ],
+    icon: [{ url: "/favicon.ico" }],
   },
 }
 
