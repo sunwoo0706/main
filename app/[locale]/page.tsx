@@ -8,7 +8,7 @@ export default function IndexPage() {
     <main>
       <SiteConsoleMessage />
       <AboutToday />
-      <AboutProject />
+      {/* <AboutProject /> */}
       <AboutMore />
     </main>
   )
