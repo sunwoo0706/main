@@ -16,8 +16,8 @@
   },
   "about": {
     "today": {
-      "title": "Today",
-      "description": "As a paid professional, I strive to be a developer who adds value, and I like to try different things to increase my value, and I value the process of success and failure along the way.<br /><br />I'm interested in the Canvas API and want to become a developer who is proficient in that technology.<br /><br />I have experience developing and managing services from conception to launch."
+      "title": "About me",
+      "description": "When I was in my second year of middle school, I started developing TTS bots to play games with my friends and talk without voice on Discord.<br />When I was in high school, I formed a development team and launched and operated a web service that improved problems and complex processes on campus. Based on this experience, I started my career as a developer in a small start-up after graduation.<br />As a front-end engineer, I grew up working in various domains such as Edutech, artificial intelligence, and e-commerce. In this process, I learned that the core role of the developer is not limited to a specific domain or programming language, but to convey practical value to users, and I have focused and worked on this.<br />You enjoy technical challenges, but place greater importance on maximizing value with minimal resources from current problems and requirements. We don't believe that the best solution that applies to all situations exists, but instead we try to come up with the best solution for each situation."
     },
     "project": {
       "title": "Project",
